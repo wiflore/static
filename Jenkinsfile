@@ -9,7 +9,7 @@ pipeline {
 					ls -lah
 				'''
 				withAWS(credentials:'aws-static') {
-    					s3Upload(file:'index.html', bucket:'s3-jenkins', path:'index.html')	
+    					s3Upload(file:'index.html', bucket:'s3-jenkins-wflorez1', path:'index.html')	
 				}
 			}
 		}
